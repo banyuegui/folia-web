@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "strict": true,
+    "types": [
+      "node"
+    ],
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@folia/folium-source-kit": [
+        "./packages/folium-source-kit/src/index.ts"
+      ],
+      "@folia/folium": [
+        "./mods/folium.d.ts"
+      ],
+      "@folia/source-deps": [
+        "./dev/sources/sourceDeps.d.ts"
+      ]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "release",
+    "sync-server",
+    "original",
+    "sources",
+    "test/fixtures/folium-sources",
+    "dist-mods"
+  ]
+}
